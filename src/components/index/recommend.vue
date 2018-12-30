@@ -13,19 +13,19 @@
         </div>
         <div class="recommend-content clearfix">
             <div class="product-content fl">
-                <ul class="list clearfix" ref="flash">
-                    <li class="item fl" v-for="item of 6">
+                <ul class="list clearfix" ref="recommend">
+                    <li class="item fl" v-for="item of recommend">
                         <dl>
                             <dt>
                                 <a href="#" class="link">
-                                    <img src="">
+                                    <img :src="item.p_img_url">
                                 </a>
                             </dt>
                             <dd class="recommend-title">
-                                <a href="#"> ZMI双模智能充电器+充电宝 </a>
+                                <a href="#"> {{item.pname}} </a>
                             </dd>
-                            <dd class="price">109元</dd>
-                            <dd class="recommend-tips">1625人好评</dd>
+                            <dd class="price">{{item.p_price}}元</dd>
+                            <dd class="recommend-tips">{{parseInt(Math.random()*1000)+1}}人好评</dd>
                         </dl>
                     </li>
                 </ul>
@@ -35,8 +35,24 @@
 </template>
 
 <script>
+    import '../../lib/js/recommend';
     export default {
-
+        data(){
+            return{
+                recommend: [],
+            }
+        },
+        methods:{
+            recommendInfo(){
+                this.$http.get('recommend').then(res=>{
+                    this.recommend = res.body;
+                    this.$refs.recommend.style.width = this.recommend.length*248 + 'px';
+                })
+            }
+        },
+        created(){
+            this.recommendInfo();
+        }
     }
 </script>
 
