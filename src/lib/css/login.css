@@ -1,0 +1,165 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.l-logo{
+	width: 1130px;
+	height: 98px;
+	margin: 0 auto;
+}
+.bg-i {
+	width: 100%;
+	height: 560px;
+	margin: 0 auto;
+	background: url(../images/login/01.jpg)center center;
+	cursor: pointer;
+}
+.bg-i::before {
+	display: table;
+	content: '';
+}
+.content {
+	width: 1130px;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+}
+.bg-i .login-info {
+	width: 410px;
+	height: 524px;
+	background-color: #fff;
+	margin-top: 30px;
+	float: right;
+	text-align: center;
+	cursor: default;
+}
+.login-mode {
+	font-size: 24px;
+	padding: 27px 0 24px;
+}
+.login-mode span {
+	display: inline-block;
+	width: 1px;
+	height: 25px;
+	background: #e0e0e0;
+	margin: 0 35px 0 42px;
+	position: relative;
+	top: 5px;
+}
+.login-mode a:first-child {
+	color: #f56600;
+}
+.login-mode a:last-child {
+	color: #666;
+	transition: .2s;
+}
+.login-mode a:hover {
+	color: #ff6700;
+}
+.form-list input {
+	width: 332px;
+	height: 48px;
+	outline: none;
+	padding-left: 10px;
+	font-size: 14px;
+}
+#uname {
+	margin-top: 10px;
+}
+#upwd {
+	margin: 15px 0 25px;
+}
+#sub {
+	width: 348px;
+	color: #fff;
+	border: none;
+	background-color: #ff6700;
+}
+#sub:hover {
+	cursor: pointer;
+}
+.form-list p {
+	font-size: 14px;
+}
+.form-list p a,.form-list p span {
+	color: #999;
+}
+.form-list p a:first-child {
+	color: #ef5b00;
+	margin-right: 90px;
+}
+.form-list p a:nth-child(2):hover,.form-list p a:last-child:hover{
+	color: #ff6700;
+}
+.login-other {
+	margin-top: 128px;
+}
+.login-other fieldset {
+	width: 348px;
+	margin: 0 auto;
+	border: 0;
+	border-top: 1px solid #e0e0e0;
+	color: #bbb;
+}
+.footer {
+	color: #757575;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 110px;
+}
+.footer a {
+	color: #757575;
+}
+.footer p:first-child span{
+	margin: 0 10px;
+}
+.footer p:first-child a:first-child {
+	color: #333;
+}
+.footer p:first-child a:hover {
+	color: #333;
+}
+.footer p:last-child {
+	margin: 10px 0 25px;
+}
+.login-other a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin: 10px 17px;
+}
+.qq {
+	background-color: #0288d1;
+}
+.wb {
+	background-color: #d32f2f;
+}
+.zfb {
+	background-color: #0ae;
+}
+.wx {
+	background-color: #00d20d;
+}
+.login-other a i{
+	display: block;
+	width: 18px;
+	height: 18px;
+	margin: 6px auto;
+}
+.login-other .zfb i,.login-other .wx i {
+	width: 24px;
+}
+.login-other .qq i {
+	background: url(../images/login/icons_type.png)-19px no-repeat #0288d1;
+}
+.login-other .wb i {
+	background: url(../images/login/icons_type.png)-38px no-repeat #d32f2f;
+}
+.login-other .zfb i {
+	background: url(../images/login/icons_type.png)-57px no-repeat #0ae;
+}
+.login-other .wx i {
+	background: url(../images/login/icons_type.png)-84px no-repeat #00d20d;
+}
