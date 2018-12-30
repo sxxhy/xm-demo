@@ -1,6 +1,6 @@
 <template>
     <li class="product-item">
-        <router-link :to="`product/${phoneInfo.sid}`" class="link">
+        <router-link :to="{path:'/product/'+phoneInfo.sid}" class="link">
             <div class="item-img">
                 <img :src="phoneInfo.poster">
             </div>

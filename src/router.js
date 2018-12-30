@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-
+import Product from './components/productDetail/product'
 Vue.use(Router)
 
 export default new Router({
@@ -13,5 +13,10 @@ export default new Router({
       name: 'home',
       component: Home
     },
+    {
+      path: '/product/:pid',
+      name: 'product',
+      component: Product
+    }
   ]
 })
