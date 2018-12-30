@@ -183,6 +183,8 @@
                             display: inline-block
                             color: #fafafa
                             background-color: rgba(66,66,66,0.2)
+                            &:hover
+                                background-color: rgba(66,66,66,0.6)
                         .prev
                             left: 0
                         .next
