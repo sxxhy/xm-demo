@@ -1,0 +1,17 @@
+$(function(){
+    $('.nav-list').on('mouseenter','.link-item',function(e){
+        $('.nav-menu').slideDown('fast');
+    }).on('mouseleave',function(e){
+        $('.nav-menu').slideUp('fast');
+    });
+    $('.last-link').mouseenter(function(){
+        $('.nav-menu').slideUp('fast');
+    })
+    $('.search-text').focus(function(){
+        $(this).addClass('focus');
+        $('.search-btn').addClass('focus');
+    }).blur(function(){
+        $(this).removeClass('focus');
+        $('.search-btn').removeClass('focus');
+    })
+})
