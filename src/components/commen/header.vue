@@ -17,7 +17,7 @@
 						下载app
 						<span class="download">
 							<i class="down"></i>
-							<img src="../../lib/images/header/download.png" width="90px" height="90px">
+							<img src="../../assets/images/header/download.png" width="90px" height="90px">
 							<span>小米商城APP</span>
 						</span>
 					</router-link><span>|</span>
@@ -42,7 +42,7 @@
 		<div class="header-nav clearfix">
 			<div class="nav-content content clearfix">
 				<div class="logo fl">
-					<img src="../../lib/images/register/milogo.png" width="55px" height="55px" alt="logo" title="小米商城">
+					<img src="../../assets/images/register/milogo.png" width="55px" height="55px" alt="logo" title="小米商城">
 				</div>
 				<div class="nav fl">
 					<ul class="nav-list">
@@ -109,13 +109,13 @@
 					<div class="search-tip"></div>
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 </template>
 
 <script>
-	import '../../lib/js/header';
+	import '../../assets/js/header';
     export default {
         data(){
 			return {
@@ -133,7 +133,7 @@
 			}
 		},
 		created(){
-			
+
 		}
     }
 </script>
@@ -213,7 +213,7 @@
 				&:hover
 					color: #ff6700
 					background-color: #fff
-					.k-ion-ios-cart 
+					.k-ion-ios-cart
 						color: #ff6700
 					.cart-content
 						height: 100px
@@ -234,7 +234,7 @@
 						margin: 25px 20px 20px
 	.header-nav
 		z-index: 20
-		height: 100px 
+		height: 100px
 		color: #333
 		.nav-content
 			.logo
@@ -257,8 +257,8 @@
 					margin: 0;
 					padding: 12px 0 0 30px;
 					.navBanner
-						position: relative 
-						float: left 
+						position: relative
+						float: left
 						width: 127px
 						padding-right: 15px
 						display: list-item

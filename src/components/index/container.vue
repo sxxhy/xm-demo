@@ -12,7 +12,7 @@
         <div class="phone-content clearfix">
             <div class="advertice">
                 <a href="#" class="link">
-                    <img src="../../lib/images/pc_index/1.jpg">
+                    <img src="../../assets/images/pc_index/1.jpg">
                 </a>
             </div>
             <div class="phone-list">

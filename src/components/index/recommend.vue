@@ -35,7 +35,7 @@
 </template>
 
 <script>
-    import '../../lib/js/recommend';
+    import '../../assets/js/recommend';
     export default {
         data(){
             return{

@@ -14,7 +14,7 @@
         <div class="flash-content clearfix">
             <div class="flash-active fl">
                 <div class="time">{{hour}}:00 场</div>
-                <img src="../../lib/images/flash.png">
+                <img src="../../assets/images/flash.png">
                 <div class="distance">距离结束还有</div>
                 <div class="count-down clearfix">
                     <div class="fl box">00</div>
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-    import '../../lib/js/flash';
+    import '../../assets/js/flash';
     export default {
         data(){
             return {

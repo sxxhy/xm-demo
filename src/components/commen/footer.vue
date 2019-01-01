@@ -53,7 +53,7 @@
         </div>
         <div class="content mi-info">
             <div class="fl logo">
-                <img src="../../lib/images/mi-logo.png" alt="">
+                <img src="../../assets/images/mi-logo.png" alt="">
             </div>
             <div class="site-info fl">
                 <p class="first-info">
@@ -88,15 +88,15 @@
                 </p>
             </div>
             <div class="img-links fr">
-                <a href="#"><img src="../../lib/images/footer/truste.png" alt="#"></a>
-                <a href="#"><img src="../../lib/images/footer/v-logo-2.png" alt="#"></a>
-                <a href="#"><img src="../../lib/images/footer/v-logo-1.png" alt="#"></a>
-                <a href="#"><img src="../../lib/images/footer/v-logo-3.png" alt="#"></a>
-                <a href="#"><img src="../../lib/images/footer/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="#"></a>
+                <a href="#"><img src="../../assets/images/footer/truste.png" alt="#"></a>
+                <a href="#"><img src="../../assets/images/footer/v-logo-2.png" alt="#"></a>
+                <a href="#"><img src="../../assets/images/footer/v-logo-1.png" alt="#"></a>
+                <a href="#"><img src="../../assets/images/footer/v-logo-3.png" alt="#"></a>
+                <a href="#"><img src="../../assets/images/footer/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="#"></a>
             </div>
         </div>
         <div class="content slogan">
-            <img src="../../lib/images/footer/slogan2016.png" alt="">
+            <img src="../../assets/images/footer/slogan2016.png" alt="">
         </div>
     </div>
 </template>
@@ -108,5 +108,5 @@
 </script>
 
 <style>
-    @import "../../lib/css/footer.css";
+    @import "../../assets/css/footer.css";
 </style>

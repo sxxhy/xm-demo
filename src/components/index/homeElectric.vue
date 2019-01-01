@@ -49,7 +49,7 @@
 
 <script>
     import productItem from './productItemHover';
-    import '../../lib/js/productList';
+    import '../../assets/js/productList';
     export default {
         data(){
             return{

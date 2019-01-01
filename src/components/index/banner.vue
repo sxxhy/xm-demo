@@ -14,7 +14,7 @@
 </template>
 
 <script>
-    import '../../lib/js/banner';
+    import '../../assets/js/banner';
     export default {
         data(){
             return {
@@ -51,7 +51,7 @@
                     display: block
         .slide-left,.slide-right
             display: block
-            background: url("../../lib/images/icon-slides.png")
+            background: url("../../assets/images/icon-slides.png")
             position: absolute
             z-index: 20
             width: 41px

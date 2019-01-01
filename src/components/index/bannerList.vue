@@ -43,17 +43,17 @@
         <div class="banner-list fl">
             <div class="banner-item">
                 <a href="javascript:;" class="link">
-                    <img src="../../lib/images/banner/6.jpg">
+                    <img src="../../assets/images/banner/6.jpg">
                 </a>
             </div>
             <div class="banner-item ml">
                 <a href="javascript:;" class="link">
-                    <img src="../../lib/images/banner/7.jpg">
+                    <img src="../../assets/images/banner/7.jpg">
                 </a>
             </div>
             <div class="banner-item ml">
                 <a href="javascript:;" class="link">
-                    <img src="../../lib/images/banner/8.jpg">
+                    <img src="../../assets/images/banner/8.jpg">
                 </a>
             </div>
         </div>
@@ -64,8 +64,8 @@
     export default {
         data(){
             return {
-                bannerList: ['','../../lib/images/banner/6.jpg',
-                    '../../lib/images/banner/6.jpg'],
+                bannerList: ['','../../assets/images/banner/6.jpg',
+                    '../../assets/images/banner/6.jpg'],
             }
         }
     }
@@ -127,7 +127,7 @@
                 width: 316px
                 height: 170px
                 &.ml
-                    margin-left: 15px;
+                    margin-left: 15px
                 .link
                     display: block
                     img
