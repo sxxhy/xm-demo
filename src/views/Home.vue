@@ -40,16 +40,16 @@
 </template>
 
 <script>
-import banner from '../components/index/banner';
-import bannerList from '../components/index/bannerList';
+import banner from '../components/index/Banner';
+import bannerList from '../components/index/BannerList';
 import flashPurchase from '../components/index/FlashPurchase';
 import indexPhone from '../components/index/phone';
-import indexBanner from '../components/index/indexBanner';
-import homeElectric from '../components/index/homeElectric';
-import recommend from '../components/index/recommend';
-import hotReview from '../components/index/hotReview';
-import various from '../components/index/various';
-import homeVideo from '../components/index/video';
+import indexBanner from '../components/index/IndexBanner';
+import homeElectric from '../components/index/HomeElectric';
+import recommend from '../components/index/Recommend';
+import hotReview from '../components/index/HotReview';
+import various from '../components/index/Various';
+import homeVideo from '../components/index/Video';
   export default {
     data(){
       return{
@@ -77,7 +77,7 @@ import homeVideo from '../components/index/video';
       xmVarious: various,
       xmHomeVideo: homeVideo
     }
-  }  
+  }
 </script>
 <style lang="stylus" scoped>
     .menu-banner

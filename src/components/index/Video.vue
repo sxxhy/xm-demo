@@ -11,17 +11,17 @@
         </div>
         <div class="video-content">
             <ul class="video-list clearfix">
-                <li class="video-item fl" v-for="item of 4">
+                <li class="video-item fl" v-for="item of videos" @click="evtPlayVideo(item)">
                     <div class="item-img">
-                        <a href="#" class="link">
-                            <img src="">
+                        <a :href="item.videoUrl" class="link">
+                            <img :src="item.imgUrl">
                             <span class="play"><i class="icon"></i></span>
                         </a>
                     </div>
                     <h3 class="title">
-                        <a href="#">一团火</a>
+                        <a href="#">{{item.title}}</a>
                     </h3>
-                    <p class="subtitle">小米创业8年内部纪录片（手机篇）</p>
+                    <p class="subtitle">{{item.desc}}</p>
                 </li>
             </ul>
         </div>
@@ -31,7 +31,45 @@
 <script>
 
     export default {
-
+        data () {
+            return {
+                title: '视频',
+                videos: [{
+                    videoUrl: 'http://hd.mi.com/f/zt/hd/misc/youku.html?vid=XMTY1ODg5ODA0MA==',
+                    imgUrl: 'http://i3.mifile.cn/a4/73d67577-cbc7-4bd0-8678-4b1e95f4f4dc',
+                    title: '红米年度品牌视频',
+                    desc: '一亿人喜爱你，是一种责任。'
+                },
+                    {
+                        videoUrl: 'http://hd.mi.com/f/zt/hd/misc/youku.html?vid=XMTY1OTg3NjQ4OA==',
+                        imgUrl: 'http://i3.mifile.cn/a4/f7e434fb-8ce4-4442-bf78-0d66e409dfc3',
+                        title: '小米笔记本Air最全介绍视频',
+                        desc: '带独立显卡的轻薄笔记本'
+                    },
+                    {
+                        videoUrl: 'http://hd.mi.com/f/zt/hd/misc/youku.html?vid=XMTY1OTg4NjY0OA==',
+                        imgUrl: 'http://i3.mifile.cn/a4/e2df3ad8-4147-44e1-8a54-b6bcafdc6c66',
+                        title: '小米笔记本Air可靠性测试视频',
+                        desc: '小米笔记本Air是如何炼成的？'
+                    },
+                    {
+                        videoUrl: 'http://hd.mi.com/f/zt/hd/misc/youku.html?vid=XMTU2NDM3NjEzMg==',
+                        imgUrl: 'http://i3.mifile.cn/a4/T1v3LgBTxv1RXrhCrK.jpg',
+                        title: '小米Max 绝美外观视频',
+                        desc: '6.44" 大屏黄金尺寸，看什么都震撼'
+                    }]
+            }
+        },
+        methods: {
+            evtPlayVideo (opts) {
+                let videoOpt = {
+                    status: true,
+                    title: opts.title,
+                    videoUrl: opts.videoUrl
+                };
+                this.$dispatch('play', videoOpt)
+            }
+        },
     }
 </script>
 

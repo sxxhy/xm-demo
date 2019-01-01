@@ -5,10 +5,10 @@
 </template>
 
 <script>
-    import phoneContainer from './container'
+    import PhoneContainer from './Container'
     export default {
         components:{
-            phoneContainer
+            PhoneContainer
         }
     }
 </script>

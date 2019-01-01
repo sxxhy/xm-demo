@@ -1,6 +1,6 @@
-import header from '../components/commen/header';
-import menu from '../components/commen/menu';
-import footer from '../components/commen/footer';
+import header from '../components/commen/Header';
+import menu from '../components/commen/Menu';
+import footer from '../components/commen/Footer';
 const Components = {
     install(Vue) {
         Vue.component('xmHeader',header);

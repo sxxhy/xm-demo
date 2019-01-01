@@ -10,7 +10,7 @@
                 <span>{{listInfo.p_price}}元</span>&nbsp;
                 <del>{{listInfo.p_price+200}}元</del>
             </div>
-            <div class="flags" v-if="listInfo.P_active">{{listInfo.P_active}}</div>
+            <div class="flags" v-if="listInfo.P_active"  :style="{background:`${listInfo.P_active.indexOf('新')==-1?'#e53935':'#83c44e'}`}">{{listInfo.P_active}}</div>
             <div class="comment">
                 <a href="#" class="comment-content">
                     <span class="text">样子美观大方，加上优惠券这个壶太划算了，祝小米明年越...</span>

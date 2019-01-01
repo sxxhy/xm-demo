@@ -48,7 +48,7 @@
 </template>
 
 <script>
-    import productItem from './productItemHover';
+    import ProductItem from './ProductItemHover';
     import '../../assets/js/productList';
     export default {
         data(){
@@ -59,7 +59,7 @@
             }
         },
         components:{
-            productItem
+            ProductItem
         },
         methods:{
             getProductList(){

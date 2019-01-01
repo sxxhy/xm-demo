@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Product from './components/productDetail/product'
+import Product from './views/Product'
 Vue.use(Router)
 
 export default new Router({

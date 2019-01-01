@@ -1,6 +1,6 @@
 <template>
     <div class="product-detail">
-        nihao
+        <xm-header></xm-header>
     </div>
 </template>
 

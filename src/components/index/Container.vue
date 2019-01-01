@@ -25,7 +25,7 @@
 </template>
 
 <script>
-    import productItem from './productItem'
+    import ProductItem from './ProductItem'
     export default {
         data(){
             return{
@@ -46,7 +46,7 @@
             this.getPhoneInfo()
         },
         components:{
-            productItem
+            ProductItem
         }
     }
 </script>
