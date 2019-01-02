@@ -46,8 +46,9 @@
 				</div>
 				<div class="nav fl">
 					<ul class="nav-list">
-						<li class="navBanner">
+						<li class="navBanner" :class="navBannerStyle=''?'':'visible'">
 							<a href="#" class="nav-link">全部商品分类</a>
+							<xm-menu class="header-nav-box"></xm-menu>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link link-item" @mouseenter="getNavContent(1)">小米</a>
@@ -134,7 +135,8 @@
 		},
 		created(){
 
-		}
+		},
+		props: ['navBanner']
     }
 </script>
 
@@ -250,20 +252,38 @@
 						&:hover
 							color: #ff6700
 					font-size: 16px
-					z-index: 10;
-					float: left;
-					width: 820px;
-					height: 88px;
-					margin: 0;
-					padding: 12px 0 0 30px;
+					z-index: 10
+					float: left
+					width: 820px
+					height: 88px
+					margin: 0
+					padding: 12px 0 0 30px
 					.navBanner
 						position: relative
 						float: left
 						width: 127px
 						padding-right: 15px
-						display: list-item
 						visibility: hidden
 						height: 100%
+						&.visible
+							visibility: visible
+							.nav-link
+								visibility: visible
+							.header-nav-box
+								.menu-list
+									border: 1px solid #ff6700
+									background-color: #fff
+									.item-link
+										color: #424242
+										i
+											color: #e0e0e0
+						&:hover
+							.header-nav-box
+								display: block
+						.header-nav-box
+							display: none
+							top: 88px
+							left: -92px
 					.nav-item
 						float left
 						display: list-item

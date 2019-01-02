@@ -1,15 +1,21 @@
 <template>
     <div class="product-detail">
-        <xm-header></xm-header>
+        <xm-header class="header-box" :nav-banner="navBannerStyle"></xm-header>
+
     </div>
 </template>
 
 <script>
     export default {
-        name: "product"
+        name: "product",
+        data(){
+            return {
+                navBannerStyle:'visible',
+            }
+        }
     }
 </script>
 
-<style scoped>
+<style scoped lang="stylus">
 
 </style>
