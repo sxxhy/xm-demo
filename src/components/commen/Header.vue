@@ -46,7 +46,7 @@
 				</div>
 				<div class="nav fl">
 					<ul class="nav-list">
-						<li class="navBanner" :class="navBannerStyle=''?'':'visible'">
+						<li class="navBanner" :class="navBanner">
 							<a href="#" class="nav-link">全部商品分类</a>
 							<xm-menu class="header-nav-box"></xm-menu>
 						</li>

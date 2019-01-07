@@ -12,6 +12,14 @@
             return {
                 navBannerStyle:'visible',
             }
+        },
+        methods:{
+            getUrl(){
+                console.log(this.$route)
+            }
+        },
+        created(){
+            this.getUrl();
         }
     }
 </script>
