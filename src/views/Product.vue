@@ -25,5 +25,6 @@
 </script>
 
 <style scoped lang="stylus">
-
+    .product-detail .header-nav .nav-content .nav .nav-list .navBanner
+        visibility visible
 </style>
