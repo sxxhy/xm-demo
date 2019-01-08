@@ -13,7 +13,7 @@
             <ul class="video-list clearfix">
                 <li class="video-item fl" v-for="item of videos" @click="evtPlayVideo(item)">
                     <div class="item-img">
-                        <a :href="item.videoUrl" class="link">
+                        <a :href="item.videoUrl" class="link" target="_blank">
                             <img :src="item.imgUrl">
                             <span class="play"><i class="icon"></i></span>
                         </a>
